@@ -1,0 +1,9 @@
+Pagination:
+  type: object
+  properties:
+    total:
+      type: integer
+    page:
+      type: integer
+    perPage:
+      type: integer

@@ -1,0 +1,26 @@
+SubtopicDto:
+  allOf:
+    - $ref: 'Common.yaml#/Common'
+    - type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        description:
+          type: string
+        topics:
+          type: array
+          items:
+            $ref: 'TopicDto.yaml#/TopicDto'
+        quests:
+          type: array
+          items:
+            $ref: 'QuestDto.yaml#/QuestDto'
+        parent:
+          $ref: 'SubtopicDto.yaml#/SubtopicDto'
+        children:
+          type: array
+          items:
+            $ref: 'SubtopicDto.yaml#/SubtopicDto'

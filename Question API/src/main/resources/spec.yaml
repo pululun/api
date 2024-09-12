@@ -1,0 +1,28 @@
+openapi: "3.0.1"
+
+info:
+  title: "Question"
+  version: "1"
+  description: Question API
+
+paths:
+  /question/{id}:
+    get:
+      summary: Get question by ID
+      operationId: getUserById
+      parameters:
+        - name: id
+          in: path
+          description: Unique Id of an User
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'dto/QuestDto.yaml#/QuestDto'
+
