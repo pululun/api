@@ -36,8 +36,7 @@
                             <modelPackage>ru.itprogram.model</modelPackage>
                             <configOptions>
                                 <interfaceOnly>true</interfaceOnly>
-                                <library>resttemplate</library>
-<!--                                <additionalModelTypeAnnotations>@lombok.Builder @lombok.NoArgsConstructor @lombok.AllArgsConstructor</additionalModelTypeAnnotations>-->
+                                <additionalModelTypeAnnotations>@lombok.Builder @lombok.NoArgsConstructor @lombok.AllArgsConstructor</additionalModelTypeAnnotations>
                             </configOptions>
                         </configuration>
                     </execution>
