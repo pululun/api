@@ -1,0 +1,47 @@
+/api/v1/order/{id}:
+  post:
+    tags:
+      - OrderController
+    operationId: createOrder
+    requestBody:
+      content:
+        application/json:
+          schema:
+            $ref: '../dto/OrderRq.yml#/OrderRq'
+    responses:
+      "200":
+        description: OK
+        content:
+          application/json:
+            schema:
+              $ref: '../dto/OrderRq.yml#/OrderRq'
+      "400":
+        $ref: '../dto/error/400.yml#/400'
+      "403":
+        $ref: '../dto/error/403.yml#/403'
+      "404":
+        $ref: '../dto/error/404.yml#/404'
+  get:
+    tags:
+      - OrderController
+    operationId: getOrderById
+    parameters:
+      - name: id
+        in: path
+        schema:
+          type: integer
+          format: int32
+          default: 0
+    responses:
+      "200":
+        description: OK
+        content:
+          application/json:
+            schema:
+              $ref: '../dto/OrderRs.yml#/OrderRs'
+      "400":
+        $ref: '../dto/error/400.yml#/400'
+      "403":
+        $ref: '../dto/error/403.yml#/403'
+      "404":
+        $ref: '../dto/error/404.yml#/404'

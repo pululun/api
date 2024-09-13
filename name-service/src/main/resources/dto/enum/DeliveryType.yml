@@ -1,0 +1,10 @@
+DeliveryType:
+  type: string
+  enum:
+    - САМОВЫВОЗ
+    - КУРЬЕРСКАЯ ДОСТАВКА
+    - ПОСТАМАТЫ
+  x-enum-varnames:
+    - PICKUP
+    - COURIER_DELIVERY
+    - PEDESTALS
