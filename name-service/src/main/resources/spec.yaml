@@ -1,0 +1,15 @@
+openapi: "3.0.1"
+info:
+  title: Title for service
+  description: Description for service
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080/servicePathHere
+    description: Generated server url
+paths:
+  /api/v1/order/{id}:
+    $ref: "controller/OrderController.yml#/~1api~1v1~1order~1{id}"
+components:
+  schemas:
+    ExtendsExample:
+      $ref: 'dto/ExtendsExample.yml#/ExtendsExample'

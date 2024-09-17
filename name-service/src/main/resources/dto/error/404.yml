@@ -1,0 +1,6 @@
+404:
+  description: Not Found
+  content:
+    application/json:
+      schema:
+        $ref: 'ErrorResponse.yml#/ErrorResponse'

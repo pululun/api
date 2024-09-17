@@ -1,0 +1,7 @@
+ExtendsExample:
+  allOf:
+    - $ref: 'OrderRs.yml#/OrderRs'
+    - type: object
+      properties:
+        newProperty:
+          type: string

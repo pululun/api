@@ -1,7 +1,0 @@
-Common:
-  discriminator:
-    propertyName: common
-  properties:
-    common:
-      type: string
-      x-field-extra-annotation: "@com.fasterxml.jackson.annotation.JsonIgnore"

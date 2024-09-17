@@ -1,0 +1,22 @@
+OrderRq:
+  type: object
+  required:
+    - name
+    - deliveryType
+    - count
+    - messages
+  properties:
+    name:
+      type: string
+      maxLength: 50
+    deliveryType:
+      $ref: 'enum/DeliveryType.yml#/DeliveryType'
+    count:
+      type: integer
+      minimum: 0
+      maximum: 10
+      default: 1
+    messages:
+      type: array
+      items:
+        type: string

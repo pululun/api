@@ -1,0 +1,9 @@
+ErrorResponse:
+  type: object
+  properties:
+    data:
+      type: string
+    code:
+      type: integer
+    message:
+      type: string
